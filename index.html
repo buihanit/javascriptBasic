@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+     <script>
+          // Exercise-4
+          // Write a JavaScript program to find the area
+          // of a triangle where lengths of the three of its sides are 5, 6, 7
+          // -------------------------------------------------------------
+
+          // function area(a, b, c) {
+          //      const p = (a + b + c) / 2
+          //      return Math.sqrt(p * (p - a) * (p - b) * (p - c))
+          // }
+          // console.log(area(5, 6, 7));
+
+          // =============================================================
+
+          // Exercise-5
+          // Write a JavaScript program to rotate the string 'w3resource'
+          // in right direction by periodically removing one letter from the end of
+          // the string and attaching it to the front.
+
+          // -------------------------------------------------------------
+          // let string = 'w3resource'
+          // function rotateString(str) {
+          //      let arrStr = []
+          //      for (let i = 1; i <= str.length; i++) {
+          //           arrStr.push(str[str.length - i])
+          //      }
+          //      return arrStr.join('')
+          // }
+          // console.log(rotateString(string))
+
+          // =============================================================
+
+          // Exercise-8
+          // Write a JavaScript program where the program takes a random integer between 1 to 10,
+          // the user is then prompted to input a guess number.
+          // If the user input matches with guess number,
+          // the program will display a message "Good Work" otherwise display a message "Not matched"
+
+          // -------------------------------------------------------------
+          // let numberRandom = Math.ceil(Math.random() * 10)
+          // let number = prompt('nhập số từ 1 đến 10')
+          // number = +number
+          // console.log(number)
+          // if (number === numberRandom) {
+          //      console.log('Good Work, con số là ' + numberRandom)
+          // } else {
+          //      console.log('Not matched, con số là ' + numberRandom);
+          // }
+
+          // =============================================================
+
+          // Exercise-10
+          // Write a JavaScript program to calculate
+          // multiplication and division of two numbers (input from user).
+
+          // -------------------------------------------------------------
+
+          // function multiplyBy(a, b) {
+          //      return console.log(a * b)
+          // }
+          // multiplyBy(9, 3)
+          // function divideBy(a, b) {
+          //      return console.log(a / b);
+          // }
+          // divideBy(9, 3)
+
+          // =============================================================
+
+          // Exercise-11
+          // Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit
+          // f = (9c+(32*5))/5
+          // c= (5*(f-32))/9
+
+          // -------------------------------------------------------------
+
+          // function cToF(celsius) {
+          //      let f = (9 * celsius + (32 * 5)) / 5
+          //      return `${celsius}\xB0F is ${f}\xB0C.`;
+          // }
+          // console.log(cToF(60));
+          // function fToC(fahrenheit) {
+          //      let c = (5 * (fahrenheit - 32)) / 9
+          //      return `${fahrenheit}\xB0C is ${c}\xB0F`
+          // }
+          // console.log(fToC(45));
+
+          // =============================================================
+
+          // Exercise-12
+          // Write a JavaScript program to get the website URL (loading page).
+
+          // -------------------------------------------------------------
+
+          // console.log(document.URL);
+
+          // =============================================================
+
+          // Exercise-13
+          // Write a JavaScript exercise to create a variable using a user-defined name
+
+          // -------------------------------------------------------------
+
+          // const var_name = 'han';
+          // const n = 080193;
+          // this[var_name] = n;
+          // console.log(this[var_name])
+
+          // =============================================================
+
+          // Exercise-14
+          // Write a JavaScript exercise to get the extension of a filename
+
+          // -------------------------------------------------------------
+
+          // function getExtensionFile(file) {
+          //      let fileToArr = file.split(".")
+          //      console.log(fileToArr)
+          //      console.log(file)
+          //      let extension = fileToArr.pop()
+          //      console.log(extension)
+          //      console.log(fileToArr)
+          //      return extension;
+          // }
+          // getExtensionFile('system.php')
+
+          // =============================================================
+
+          // Exercise-15
+          // Write a JavaScript program to get the difference between a given number and 13,
+          // if the number is greater than 13 return double the absolute difference
+
+          // -------------------------------------------------------------
+
+          // function differenceBetween(number) {
+          //      if (number > 13) {
+          //           return (number - 13) * 2
+          //      }
+          //      else {
+          //           return (13 - number)
+          //      }
+          // }
+          // console.log(differenceBetween(32))
+          // console.log(differenceBetween(11))
+
+          // =============================================================
+
+          // Exercise-16
+          // Write a JavaScript program to compute the sum of the two given integers.
+          // If the two values are same, then returns triple their sum
+
+          // -------------------------------------------------------------
+
+          // function sum(a, b) {
+          //      if (a === b) {
+          //           return (a + b) * 3
+          //      } else {
+          //           return (a + b)
+          //      }
+          // }
+          // console.log(sum(10, 20));
+          // console.log(sum(10, 10));
+
+          // =============================================================
+
+          // Exercise-17
+          // Write a JavaScript program to compute the absolute difference between a specified number and 19.
+          // Returns triple their absolute difference if the specified number is greater than 19.
+
+          // -------------------------------------------------------------
+
+          // function absoluteDifference(number) {
+          //      if (number <= 19) {
+          //           return (19 - number)
+          //      } else {
+          //           return (number - 19)
+          //      }
+          // }
+          // console.log(absoluteDifference(12));
+          // console.log(absoluteDifference(19));
+          // console.log(absoluteDifference(22));
+
+          // =============================================================
+
+          // Exercise-17
+          // Write a JavaScript program to check two given numbers and
+          // return true if one of the number is 50 or if their sum is 50.
+
+          // -------------------------------------------------------------
+
+          // function checkNumber(a, b) {
+          //      return ((a === 50) || (b === 50) || (a + b === 50))
+          // }
+          // console.log(checkNumber(50, 50));
+          // console.log(checkNumber(20, 50));
+          // console.log(checkNumber(20, 20));
+          // console.log(checkNumber(20, 30));
+
+          // =============================================================
+
+          // Exercise-19
+          // Write a JavaScript program to check whether a given integer is within 20 of 100 or 400
+
+          // -------------------------------------------------------------
+
+          // function testhundred(number) {
+          //      return ((Math.abs(number - 100) <= 20) || (Math.abs(number - 400) <= 20))
+          // }
+
+          // console.log(testhundred(10));
+          // console.log(testhundred(90));
+          // console.log(testhundred(99));
+          // console.log(testhundred(199));
+          // console.log(testhundred(200));
+
+          // =============================================================
+
+          // Exercise-20
+          // Write a JavaScript program to check from two given integers,
+          // whether one is positive and another one is negative.
+
+          // -------------------------------------------------------------
+
+          // function positiveNegative(number1, number2) {
+          //      if ((number1 > 0 && number2 < 0) || (number1 < 0 && number2 > 0)) {
+          //           return true
+          //      } else {
+          //           return false
+          //      }
+          // }
+          // console.log(positiveNegative(2, 2));
+          // console.log(positiveNegative(-2, 2));
+          // console.log(positiveNegative(2, -2));
+          // console.log(positiveNegative(-2, -2));
+
+          // =============================================================
+
+          // Exercise-21
+          // Write a JavaScript program to create a new string adding "Py" in front of a given string.
+          // If the given string begins with "Py" then return the original string
+
+          // -------------------------------------------------------------
+
+          // function stringCheck(str) {
+          //      if (str == null || str == undefined || str.substring(0, 2) == "Py") {
+          //           return str
+          //      }
+          //      else {
+          //           return `Py${str}`
+          //      }
+          // }
+          // console.log(stringCheck("Python"));
+          // console.log(stringCheck("thon"));
+
+          // =============================================================
+
+          // Exercise-22
+          // Write a JavaScript program to remove a character at the specified position of a given string and return the new string
+
+          // -------------------------------------------------------------
+          // function removeCharacter(str, charPos) {
+          //      let text1 = str.substring(0, charPos)
+          //      let text2 = str.substring(charPos + 1, str.length)
+          //      return text1 + text2
+          // }
+          // console.log(removeCharacter("Python", 0));
+          // console.log(removeCharacter("Python", 3));
+          // console.log(removeCharacter("Python", 5));
+
+          // =============================================================
+
+          // Exercise-23
+          // Write a JavaScript program to create a new string from a given string changing the position of first and last characters.
+          // The string length must be greater than or equal to 1
+
+          // -------------------------------------------------------------
+
+          // function firstLast(str) {
+          //      if (str.length <= 1) {
+          //           return str
+          //      } else {
+          //           let text1 = str.substring(1, (str.length - 1))
+          //           return str.charAt(str.length - 1) + text1 + str.charAt(0)
+          //      }
+          // }
+          // console.log(firstLast('a'));
+          // console.log(firstLast('ab'));
+          // console.log(firstLast('abc'));
+
+          // =============================================================
+
+          // Exercise-24
+          // Write a JavaScript program to create a new
+          // string from a given string with the first character of
+          // the given string added at the front and back
+
+          // -------------------------------------------------------------
+
+          // function frontBack(str) {
+          //      return str.charAt(0) + str + str.charAt(0)
+          // }
+          // console.log(frontBack('a'));
+          // console.log(frontBack('ab'));
+          // console.log(frontBack('abc'));
+
+          // =============================================================
+
+          // Exercise-25
+          // Write a JavaScript program to check whether a given positive number is a multiple of 3 or a multiple of 7
+
+          // -------------------------------------------------------------
+
+          // function multiple(number) {
+          //      if (number % 3 === 0) {
+          //           return number + ' là bội của 3'
+          //      } else if (number % 7 === 0) {
+          //           return number + ' là bội của 7'
+          //      } else {
+          //           return number + ' không phải bội của 3 hoặc 7'
+          //      }
+          // }
+          // console.log(multiple(12));
+          // console.log(multiple(14));
+          // console.log(multiple(10));
+          // console.log(multiple(11));
+
+          // =============================================================
+
+          // Exercise-26
+          // Write a JavaScript program to create a new string from a given string taking the last 3
+          // characters and added at both the front and back. The string length must be 3 or more
+
+          // -------------------------------------------------------------
+
+          // function frontBack3(str) {
+          //      if (str.length < 3) {
+          //           return false
+          //      }
+          //      return str.substring(str.length - 3, str.length) + str + str.substring(str.length - 3, str.length)
+          // }
+          // console.log(frontBack3("abc"));
+          // console.log(frontBack3("ab"));
+          // console.log(frontBack3("abcd"));
+
+          // =============================================================
+
+          // Exercise-27
+          // Write a JavaScript program to check whether a string starts with 'Java' and false otherwise
+
+          // -------------------------------------------------------------
+
+          // function checkText(str) {
+          //      if (str.length < 4) {
+          //           return false
+          //      } else {
+          //           return (str.substring(0, 4) === 'Java')
+          //      }
+          // }
+          // console.log(checkText("JavaScript"));
+          // console.log(checkText("Java"));
+          // console.log(checkText("Python"));
+
+          // =============================================================
+
+          // Exercise-28
+          // Write a JavaScript program to check whether two given integer values are in the range 50..99
+          // (inclusive). Return true if either of them are in the said range
+
+          // -------------------------------------------------------------
+
+          // function checkNumber(number1, number2) {
+          //      return ((number1 >= 50) && number1 <= 99 || (number2 >= 50) && (number2 <= 99))
+          // }
+
+          // console.log(checkNumber(12, 101));
+          // console.log(checkNumber(52, 80));
+          // console.log(checkNumber(15, 99));
+
+          // =============================================================
+
+          // Exercise-29
+          // Write a JavaScript program to check whether three given integer values are in the range 50..99 (inclusive).
+          // Return true if one or more of them are in the said range
+
+          // -------------------------------------------------------------
+
+          // function checkNumber(number1, number2, number3) {
+          //      return (((number1 >= 50) && (number1 <= 99)) || ((number2 >= 50) && (number2 <= 99)) || ((number3 >= 0) && (number3 <= 99)))
+          // }
+          // console.log(checkNumber(50, 90, 99));
+          // console.log(checkNumber(5, 9, 199));
+          // console.log(checkNumber(65, 89, 199));
+          // console.log(checkNumber(65, 9, 199));
+
+          // =============================================================
+
+          // Exercise-30
+          // Write a JavaScript program to check whether a string "Script" presents at 5th (index 4)
+          // position in a given string, if "Script" presents in the string
+          // return the string without "Script" otherwise return the original one
+
+          // -------------------------------------------------------------
+
+          // function checkString(str) {
+          //      if (str.length <= 6) {
+          //           return str
+          //      } else {
+          //           let str1 = str.substring(4, 10)
+          //           if (str1 == 'Script') {
+          //                return str.substring(0, 4) + str.substring(10, str.length)
+          //           } else {
+          //                return str
+          //           }
+          //      }
+          // }
+          // console.log(checkString("JavaScript"));
+          // console.log(checkString("CoffeeScript"));
+
+          // =============================================================
+          // Exercise-31
+          // Write a JavaScript program to find the largest of three given integers
+
+          // -------------------------------------------------------------
+
+          // function checkNumber(a, b, c) {
+          //      let max = a;
+          //      if (b > max) {
+          //           max = b;
+          //      } else {
+          //           max
+          //      }
+          //      if (c > max) {
+          //           max = c
+          //      }
+          //      return max
+          // }
+          // console.log(checkNumber(1, 0, 1));
+          // console.log(checkNumber(0, -10, -20));
+          // console.log(checkNumber(1000, 510, 440));
+          // console.log(checkNumber(10, 50, 440));
+
+          // =============================================================
+          // Exercise-32
+          // Write a JavaScript program to find a value which is nearest to 100 from two different given integer values
+
+          // -------------------------------------------------------------
+
+          // function checkNumber(a, b) {
+          //      if (a != b) {
+          //           if (Math.abs(a - 100) > Math.abs(b - 100)) {
+          //                return b
+          //           }
+          //           if (Math.abs(a - 100) < Math.abs(b - 100)) {
+          //                return a
+          //           }
+          //           return 0
+          //      } else {
+          //           return false
+          //      }
+          // }
+
+          // console.log(checkNumber(90, 89));
+          // console.log(checkNumber(-90, -89));
+          // console.log(checkNumber(90, 90));
+
+          // =============================================================
+          // Exercise-33
+          // Write a JavaScript program to check whether two numbers are in range 40..60 or in the range 70..100 inclusive
+
+          // -------------------------------------------------------------
+
+          // function checkNumber(a, b) {
+          //      if ((a >= 40 && a <= 60) && (b >= 40 && b <= 60) || (a >= 70 && a <= 100) && (b >= 70 && b <= 100)) {
+          //           return true
+          //      }
+          //      return false
+          // }
+
+          // console.log(checkNumber(44, 56));
+          // console.log(checkNumber(70, 95));
+          // console.log(checkNumber(50, 89));
+
+          // =============================================================
+          // Exercise-34
+          // Write a JavaScript program to find the larger number from the two given positive integers,
+          // the two numbers are in the range 40..60 inclusive
+
+          // -------------------------------------------------------------
+
+          // function checkNumber(a, b) {
+          //      if (a >= 40 && a <= 60 && b >= 40 && b <= 60) {
+          //           if (a > b) {
+          //                return a
+          //           } else {
+          //                return b
+          //           }
+          //      } else {
+          //           return 'Các con số không phù hợp với phạm vi'
+          //      }
+          // }
+          // console.log(checkNumber(45, 60));
+          // console.log(checkNumber(60, 40));
+          // console.log(checkNumber(50, 50));
+          // console.log(checkNumber(25, 60));
+          // console.log(checkNumber(45, 80));
+
+          // =============================================================
+          // Exercise-35
+          // Write a program to check whether a specified character exists within the 2nd to 4th position in a given string
+
+          // -------------------------------------------------------------
+
+          // function checkCharacter(str, char) {
+          //      for (let i = 1; i <= 3; i++) {
+          //           if (str.charAt(i) == char) {
+          //                return true;
+          //           } else {
+          //                return false
+          //           }
+          //      }
+          // }
+          // console.log(checkCharacter("Pyyyyyyyython", "y"));
+          // console.log(checkCharacter("JavaScript", "a"));
+          // console.log(checkCharacter("Console", "o"));
+          // console.log(checkCharacter("Console", "C"));
+          // console.log(checkCharacter("Console", "e"));
+          // console.log(checkCharacter("JavaScript", "S"));
+
+          // =============================================================
+          // Exercise-36
+          // Write a JavaScript program to check whether the last digit of the three given positive integers is same
+
+          // -------------------------------------------------------------
+
+          // function checkLastNumber(number1, number2, number3) {
+          //      if (number1 > 0 && number2 > 0 && number3 > 0) {
+          //           return ((number1 % 10 == number2 % 10) && (number1 % 10 == number3 % 10) && (number2 % 10 == number3 % 10))
+          //      }
+          //      return false
+          // }
+
+
+          // console.log(checkLastNumber(20, 30, 400));
+          // console.log(checkLastNumber(-23, 30, 400));
+          // console.log(checkLastNumber(20, -34, 400));
+          // console.log(checkLastNumber(20, 30, -406));
+
+          // =============================================================
+          // Exercise-37
+          // Write a JavaScript program to create new string with first 3 characters are in lower case from a given string.
+          // If the string length is less than 3 convert all the characters in upper case
+
+          // -------------------------------------------------------------
+
+          // function upperLower(str) {
+          //      if (str.length > 3) {
+          //           return str.substring(0, 3).toLowerCase() + str.substring(3, str.length)
+          //      }
+          //      return str.toUpperCase()
+          // }
+
+
+          // console.log(upperLower("Python"));
+          // console.log(upperLower("Py"));
+          // console.log(upperLower("JAVAScript"));
+
+          // =============================================================
+          // Exercise-38
+          // Write a JavaScript program to check the total marks of a student in various examinations.
+          // The student will get A+ grade if the total marks are in the range 89..100 inclusive,
+          // if the examination is "Final-exam." the student will get A+ grade and total marks must be greater than or equal to 90.
+          // Return true if the student get A+ grade or false otherwise.
+
+          // -------------------------------------------------------------
+
+          // function examStatus(totmarks, isExam) {
+          //      if (isExam) {
+          //           return totmarks >= 90
+          //      }
+          //      return (totmarks >= 89 && totmarks <= 100)
+          // }
+          // console.log(examStatus("78", ""));
+          // console.log(examStatus("89", "true"));
+          // console.log(examStatus("99", "true"));
+
+          // =============================================================
+          // Exercise-39
+          // Write a JavaScript program to compute the sum of the two given integers,
+          // If the sum is in the range 50..80 return 65 other wise return 80.
+
+          // -------------------------------------------------------------
+
+          // function sortaSum(a, b) {
+          //      let sum = a + b
+          //      if (sum >= 50 && sum <= 80) {
+          //           return 65
+          //      }
+          //      return 80;
+          // }
+          // console.log(sortaSum(30, 20));
+          // console.log(sortaSum(90, 80));
+
+          // =============================================================
+          // Exercise-40
+          // Write a JavaScript program to check from two given integers whether one of them is 8 or their sum or difference is 8.
+
+          // -------------------------------------------------------------
+
+          // function checkEight(a, b) {
+          //      return ((a + b == 8) || (Math.abs(a - b) == 8) || (a == 8) || (b == 8))
+          // }
+
+          // console.log(checkEight(7, 8));
+          // console.log(checkEight(16, 8));
+          // console.log(checkEight(24, 32));
+          // console.log(checkEight(17, 18));
+
+          // =============================================================
+          // Exercise-41
+          // Write a JavaScript program to check three given numbers,
+          // if the three numbers are same return 30 otherwise return 20 and if two numbers are same return 40
+
+          // -------------------------------------------------------------
+
+          // function threeNumber(a, b, c) {
+          //      if (a == b && a == c) {
+          //           return 30
+          //      }
+          //      if (a == b || a == c || b == c) {
+          //           return 40
+          //      }
+          //      return 20
+          // }
+          // console.log(threeNumber(8, 8, 8));
+          // console.log(threeNumber(8, 8, 18));
+          // console.log(threeNumber(8, 7, 18));
+
+          // =============================================================
+          // Exercise-42
+          // Write a JavaScript program to check whether three given numbers are increasing in strict mode or in soft mode.
+          // Note: Strict mode -> 10, 15, 31 : Soft mode -> 24, 22, 31 or 22, 22, 31
+
+          // -------------------------------------------------------------
+
+          // function numberOrder(a, b, c) {
+          //      if (b > a && c > b) {
+          //           return 'Strict mode'
+          //      } else if (c > b) {
+          //           return "Soft mode"
+          //      }
+          //      return false
+          // }
+          // console.log(numberOrder(10, 15, 31));
+          // console.log(numberOrder(24, 22, 31));
+          // console.log(numberOrder(50, 21, 15));
+
+          // =============================================================
+          // Exercise-43
+          // Write a JavaScript program to check from three given numbers (non negative integers)
+          // that two or all of them have the same rightmost digit
+
+          // -------------------------------------------------------------
+
+          // function sameLastDigit(a, b, c) {
+          //      return (a % 10 == b % 10) || (a % 10 == c % 10) || (b % 10 == c % 10)
+          // }
+          // console.log(sameLastDigit(22, 32, 42));
+          // console.log(sameLastDigit(102, 302, 2));
+          // console.log(sameLastDigit(20, 22, 45));
+
+          // =============================================================
+          // Exercise-44
+          // Write a JavaScript program to check from three given integers that whether a number is greater than or equal to 20
+          // and less than one of the others.
+
+          // -------------------------------------------------------------
+
+          // function sameLastDigit(a, b, c) {
+          //      return (
+          //           (a >= 20 && (a < b || a < c)) ||
+          //           (b >= 20 && (b < a || b < c)) ||
+          //           (c >= 20 && (c < a || c < b))
+          //      )
+          // }
+          // console.log(sameLastDigit(23, 45, 10));
+          // console.log(sameLastDigit(23, 23, 10));
+          // console.log(sameLastDigit(21, 66, 75));
+
+          // =============================================================
+          // Exercise-45
+          // Write a JavaScript program to check two given integer values and return true
+          // if one of the number is 15 or if their sum or difference is 15
+
+          // -------------------------------------------------------------
+
+          // function testNumber(a, b) {
+          //      return (
+          //           (a === 15) ||
+          //           (b === 15) ||
+          //           (a + b === 15) ||
+          //           (Math.abs(a - b) === 15)
+          //      )
+          // }
+          // console.log(testNumber(15, 9));
+          // console.log(testNumber(25, 15));
+          // console.log(testNumber(7, 8));
+          // console.log(testNumber(25, 10));
+          // console.log(testNumber(5, 9));
+          // console.log(testNumber(7, 9));
+          // console.log(testNumber(9, 25));
+
+          // =============================================================
+          // Exercise-46
+          // Write a JavaScript program to check two given non-negative integers that whether one of
+          // the number (not both) is multiple of 7 or 11
+
+          // -------------------------------------------------------------
+
+          // function valCheck(a, b) {
+          //      return (
+
+          //           (a % 7 == 0) && (b % 7 != 0) ||
+          //           (a % 7 != 0) && (b % 7 == 0) ||
+          //           (a % 11 == 0) && (b % 11 != 0) ||
+          //           (a % 11 != 0) && (b % 11 == 0)
+          //      )
+          // }
+
+          // console.log(valCheck(14, 21));
+          // console.log(valCheck(14, 20));
+          // console.log(valCheck(16, 20));
+
+          // =============================================================
+          // Exercise-47
+          // Write a JavaScript program to check whether a given number is presents in the range 40..10000.
+          // For example 40 presents in 40 and 4000
+
+          // -------------------------------------------------------------
+
+          // function testDigit(x, y, n) {
+          //      if (x >= 40 && y <= 10000) {
+          //           return (n >= x && n <= 10000)
+          //      }
+          //      return false
+          // }
+          // console.log(testDigit(40, 4000, 45));
+          // console.log(testDigit(80, 320, 79));
+          // console.log(testDigit(89, 4000, 30));
+
+          // =============================================================
+          // Exercise-48
+          // Write a JavaScript program to reverse a given string
+
+          // -------------------------------------------------------------
+
+          // function stringReverse(str) {
+          //      let str1 = ''
+          //      for (let i = (str.length - 1); i >= 0; i--) {
+          //           str1 = str1 + str.charAt(i)
+          //      }
+          //      return str1
+          // }
+          // console.log(stringReverse("w3resource"))
+          // console.log(stringReverse("www"))
+          // console.log(stringReverse("JavaScript"))
+
+          // =============================================================
+          // Exercise-49
+          // Write a JavaScript program to replace every character in
+          // a given string with the character following it in the alphabet
+
+          // -------------------------------------------------------------
+
+          // function LetterChanges(str) {
+          //      var array = str.split('')
+          //      for (let i = 0; i < array.length; i++) {
+          //           switch (array[i]) {
+          //                case ' ':
+          //                     break;
+          //                case 'z':
+          //                     array[i] = 'a'
+          //                     break;
+          //                case 'Z':
+          //                     array[i] = 'A'
+          //                     break;
+          //                default:
+          //                     array[i] = String.fromCharCode(array[i].charCodeAt(0) + 1)
+          //           }
+          //           switch (array[i]) {
+          //                case 'a': case 'e': case 'i': case '0': case 'u':
+          //                     array[i] = array[i].toUpperCase();
+          //           }
+          //      }
+          //      return array.join('')
+          // }
+          // console.log(LetterChanges("PYTHON"));
+          // console.log(LetterChanges("W3Rz"));
+          // console.log(LetterChanges("php"));
+
+          // =============================================================
+          // Exercise-50
+          // Write a JavaScript program to capitalize the first letter of each word of a given string.
+
+          // -------------------------------------------------------------
+
+          // function capitalLetter(str) {
+          //      let array = str.split(" ")
+          //      for (let i = 0; i < array.length; i++) {
+          //           array[i] = array[i][0].toUpperCase() + array[i].slice(1);
+          //      }
+          //      return array.join(' ')
+          // }
+
+          // console.log(capitalLetter("Write a JavaScript program to capitalize the first letter of each word of a given string."));
+
+          // =============================================================
+          // Exercise-52
+          // Write a JavaScript program to convert the letters of a given string in alphabetical order
+
+          // -------------------------------------------------------------
+
+          // function alphabet_Soup(str) {
+          //      return str.split("").sort().join("");
+          // }
+          // console.log(alphabet_Soup("Python"));
+          // console.log(alphabet_Soup("Eexrcises"));
+
+          // =============================================================
+          // Exercise-53
+          //  Write a JavaScript program to check whether the characters a
+          // and b are separated by exactly 3 places anywhere (at least once) in a given string
+
+          // -------------------------------------------------------------
+
+          // function ab_Check(str) {
+          //      return (/a...b/).test(str) || (/b...a/).test(str);
+          // }
+          // console.log(ab_Check("Chbinsabreak"));
+          // console.log(ab_Check("panesborrowed"));
+          // console.log(ab_Check("fansbCheck"));
+
+          // =============================================================
+          // Exercise-56
+          // Write a JavaScript program to check whether a given string contains equal number of p's and t's
+
+          // -------------------------------------------------------------
+
+          // function division_string(n1, n2) {
+          //      let sum = Math.round(n1 / n2).toString()
+          //      let newarr = sum.split("")
+          //      if (sum >= 1000) {
+          //           for (let i = (sum.length - 3); i > 0; i -= 3) {
+          //                newarr.splice(i, 0, ",")
+          //           }
+          //      }
+          //      return newarr.join('');
+          // }
+          // console.log(division_string(1000, 1));
+
+          // =============================================================
+          // Exercise-57
+          // Write a JavaScript program to create a new string of specified copies (positive number) of a given string
+
+          // -------------------------------------------------------------
+
+          // function stringCopies(str, number) {
+          //      if (number < 0) {
+          //           return false
+          //      } else if (number == 0) {
+          //           return str
+          //      }
+          //      return str.repeat(number)
+          // }
+          // console.log(stringCopies("abc", 5));
+          // console.log(stringCopies("abc", 0));
+          // console.log(stringCopies("abc", -2));
+
+          // =============================================================
+          // Exercise-58
+          // Write a JavaScript program to create a new string of 4 copies of the last 3 characters of a given original string.
+          // The length of the given string must be 3 and above
+
+          // -------------------------------------------------------------
+
+          // function newstring(str) {
+          //      if (str.length < 3) {
+          //           return false
+          //      } else {
+          //           let str1 = str.substring(str.length - 3)
+          //           return str1.repeat(4)
+          //      }
+          // }
+          // console.log(newstring("Python 3.0"));
+          // console.log(newstring("JS"));
+          // console.log(newstring("JavaScript"));
+
+          // =============================================================
+          // Exercise-59
+          // Write a JavaScript program to extract the first half of a string of even length
+
+          // -------------------------------------------------------------
+
+          // function firstHalf(str) {
+          //      if (str.length % 2 == 0) {
+          //           return str.slice(0, (str.length / 2))
+          //      }
+          //      return str
+          // }
+          // console.log(firstHalf("Python"));
+          // console.log(firstHalf("JavaScript"));
+          // console.log(firstHalf("PHP"));
+
+          // =============================================================
+          // Exercise-60
+          // Write a JavaScript program to create a new string without the first and last character of a given string
+
+          // -------------------------------------------------------------
+
+          // function withoutFirstEnd(str) {
+          //      let arr = str.split('')
+          //      if (arr.length > 2) {
+          //           arr.shift();
+          //           arr.pop();
+          //           return arr.join('')
+          //      }
+          //      return arr.join('')
+          // }
+          // console.log(withoutFirstEnd('JavaScript'));
+          // console.log(withoutFirstEnd('JS'));
+          // console.log(withoutFirstEnd('PHP'));
+
+          // =============================================================
+          // Exercise-61
+          // Write a JavaScript program to concatenate two strings except their first character
+
+          // -------------------------------------------------------------
+
+          // function concatEnate(str1, str2) {
+          //      if (str1.length > 1 && str2.length > 1) {
+          //           return str1.substring(1) + str2.substring(1)
+          //      }
+          //      return str1 + str2
+          // }
+          // console.log(concatEnate("PHP", "JS"));
+          // console.log(concatEnate("A", "B"));
+          // console.log(concatEnate("AA", "BB"));
+
+          // =============================================================
+          // Exercise-62
+          // Write a JavaScript program to move last three character to the start of a given string.
+          // The string length must be greater or equal to three.
+
+          // -------------------------------------------------------------
+
+          // function right_three(str) {
+          //      if (str.length >= 3) {
+          //           return str.slice(-3) + str.slice(0, -3);
+          //      }
+          //      return str;
+          // }
+          // console.log(right_three("Python"));
+          // console.log(right_three("JavaScript"));
+          // console.log(right_three("His"));
+
+          // =============================================================
+          // Exercise-63
+          // Write a JavaScript program to create a string using the middle three characters of a given string of odd length.
+          // The string length must be greater or equal to three
+
+          // -------------------------------------------------------------
+
+          // function middle_three(str) {
+          //      if (str.length % 2 != 0) {
+          //           let midStr = (str.length + 1) / 2
+          //           return str.slice(midStr - 2, midStr + 1)
+          //      }
+          //      return str
+          // }
+          // console.log(middle_three('abcdefg'));
+          // console.log(middle_three('HTML5'));
+          // console.log(middle_three('Python'));
+          // console.log(middle_three('PHP'));
+          // console.log(middle_three('Exercises'));
+
+          // =============================================================
+          // Exercise-64
+          // Write a JavaScript program to concatenate two strings and return the result.
+          // If the length of the strings are not same then remove the characters from the longer string
+
+          // -------------------------------------------------------------
+
+          // function strConcat(str1, str2) {
+          //      const m = Math.min(str1.length, str2.length);
+          //      console.log(m)
+          //      return str1.substring(str1.length - m) + str2.substring(str2.length - m);
+          // }
+          // console.log(strConcat("Python", "JS"));
+          // console.log(strConcat("ab", "cdef"));
+
+          // =============================================================
+          // Exercise-65
+          // Write a JavaScript program to test whether a string end with "Script".
+          // The string length must be greater or equal to 6
+
+          // -------------------------------------------------------------
+
+          // function endScript(str1) {
+          //      if (str1.length >= 6 && str1.slice(str1.length - 6, str1.length) == "Script") {
+          //           return true
+          //      }
+          //      return false
+          // }
+          // console.log(endScript("JavaScript"));
+          // console.log(endScript("Java Script"));
+          // console.log(endScript("Java Scripts"));
+
+          // =============================================================
+          // Exercise-66
+          // Write a JavaScript program to display the city name if the string begins with "Los" or "New" otherwise return blank
+
+          // -------------------------------------------------------------
+
+          // function cityName(str) {
+          //      if (str.length >= 3 && (str.slice(0, 3) == "Los" || str.slice(0, 3) == "New")) {
+          //           return str
+          //      }
+          //      return ''
+          // }
+          // console.log(cityName("New York"));
+          // console.log(cityName("Los Angeles"));
+          // console.log(cityName("London"));
+
+          // =============================================================
+          // Exercise-67
+          // Write a JavaScript program to create a new string from a given string,
+          // removing the first and last characters of the string if the first or last character are 'P'.
+          // Return the original string if the condition is not satisfied.
+
+          // -------------------------------------------------------------
+
+          // function nop(str) {
+          //      if (str[0] == 'P' || str[str.length - 1] == 'P') {
+          //           return str.slice(1, str.length - 1)
+          //      }
+          //      return str
+          // }
+          // console.log(nop("PythonP"));
+          // console.log(nop("Python"));
+          // console.log(nop("JavaScript"));
+
+          // =============================================================
+          // Exercise-68
+          // Write a JavaScript program to create a new string using the first and last n characters from a given sting.
+          // The string length must be greater or equal to n.
+
+          // -------------------------------------------------------------
+
+          // function twoString(str, n) {
+          //      if (str.length >= n) {
+          //           return str.slice(0, n) + str.slice(str.length - n, str.length)
+          //      }
+          //      return str
+          // }
+          // console.log(twoString("JavaScript", 2));
+          // console.log(twoString("JavaScript", 3));
+
+          // =============================================================
+          // Exercise-69
+          // Write a JavaScript program to compute the sum of three elements of a given array of integers of length 3.
+
+          // -------------------------------------------------------------
+
+          // function sumThree(arr) {
+          //      let total = 0;
+          //      for (let number of arr) {
+          //           total += number
+          //      }
+          //      return total
+          // }
+          // console.log(sumThree([10, 32, 20]));
+          // console.log(sumThree([5, 7, 9]));
+          // console.log(sumThree([0, 8, -11]));
+
+          // =============================================================
+          // Exercise-70
+          // Write a JavaScript program to rotate the elements left of a given array of integers of length 3
+
+          // -------------------------------------------------------------
+
+          // function rotateElementsLeft(array) {
+          //      return [array[1], array[2], array[0]];
+          // }
+          // console.log(rotateElementsLeft([3, 4, 5]));
+          // console.log(rotateElementsLeft([0, -1, 2]));
+          // console.log(rotateElementsLeft([7, 6, 5]));
+
+          // =============================================================
+          // Exercise-71
+          // Write a JavaScript program to check whether 1
+          // appears in first or last position of a given array of integers.
+          // The array length must be greater or equal to
+
+          // -------------------------------------------------------------
+
+          // function checkOne(arr) {
+          //      return arr[0] === 1 || arr[arr.length - 1] == 1
+          // }
+
+          // console.log(checkOne([1, 3, 5]));
+          // console.log(checkOne([1, 3, 5, 1]));
+          // console.log(checkOne([2, 4, 6]));
+
+          // =============================================================
+          // Exercise-72
+          // Write a JavaScript program to check whether the first and last elements are equal of a given array of integers length 3
+
+          // -------------------------------------------------------------
+
+          // function first_last_same(arr) {
+          //      if (arr.length >= 3) {
+          //           return arr[0] === arr[arr.length - 1]
+          //      }
+          //      return false
+          // }
+
+          // console.log(first_last_same([10, 20, 30]));
+          // console.log(first_last_same([10, 20, 30, 10]));
+          // console.log(first_last_same([20, 20, 20]));
+
+          // =============================================================
+          // Exercise-73
+          // Write a JavaScript program to reverse the elements of a given array of integers length 3
+
+          // -------------------------------------------------------------
+
+          // function reverse3(arr) {
+          //      return arr.map((elment, index, arr) => arr[arr.length - 1 - index])
+          // }
+          // console.log(reverse3([5, 4, 3]));
+          // console.log(reverse3([1, 0, -1]));
+          // console.log(reverse3([2, 3, 1]));
+
+          // =============================================================
+          // Exercise-74
+          // Write a JavaScript program to find the larger value between the
+          // first or last and set all the other elements with that value.  Display the new array.
+
+          // -------------------------------------------------------------
+
+          // function allMax(arr) {
+          //      return arr.map((item) => {
+          //           let max = Math.max(arr[0], arr[arr.length - 1])
+          //           return item = max
+          //      })
+          // }
+          // console.log(allMax([20, 30, 40]));
+          // console.log(allMax([-7, -9, 0]));
+          // console.log(allMax([12, 10, 3]));
+
+          // =============================================================
+          // Exercise-75
+          // Write a JavaScript program to create a new array taking the middle elements of the two arrays of integer and each length 3.
+
+          // -------------------------------------------------------------
+
+          // function middleElements(arr1, arr2) {
+          //      if (arr1.length % 2 == 0 && arr2.length % 2 == 0 || arr1 == undefined || arr2 == undefined) {
+          //           return false
+          //      }
+          //      let mid1 = (arr1.length + 1) / 2
+          //      let mid2 = (arr2.length + 1) / 2
+          //      let newArr = [];
+          //      newArr.push(arr1[mid1 - 1], arr2[mid2 - 1])
+          //      return newArr
+          // }
+          // console.log(middleElements([1, 2, 3], [1, 5, 6]));
+          // console.log(middleElements([3, 3, 3], [2, 8, 0]));
+          // console.log(middleElements([4, 2, 7], [2, 4, 5]));
+
+          // =============================================================
+          // Exercise-76
+          // Write a JavaScript program to create a new array
+          // taking the first and last elements from a given array of integers and length must be greater or equal to 1
+
+          // -------------------------------------------------------------
+
+          // function started(arr) {
+          //      if (arr.length >= 1) {
+          //           return [arr[0], arr[arr.length - 1]]
+          //      }
+          //      return false
+          // }
+          // console.log(started([20, 20, 30]));
+          // console.log(started([5, 2, 7, 8]));
+          // console.log(started([17, 12, 34, 78]));
+
+          // =============================================================
+          // Exercise-77
+          // Write a JavaScript program to test whether an array of integers of length 2 contains 1 or a 3.
+
+          // -------------------------------------------------------------
+
+          // function contains13(arr) {
+          //      return arr.indexOf(1) != -1 || arr.indexOf(3) != -1
+          // }
+          // console.log(contains13([1, 5]));
+          // console.log(contains13([2, 3]));
+          // console.log(contains13([7, 5]));
+
+          // =============================================================
+          // Exercise-78
+          // Write a JavaScript program to test whether an array of integers of length 2 does not contain 1 or a 3.
+
+          // -------------------------------------------------------------
+
+          // function is13(arr) {
+          //      return arr.indexOf(1) === -1 && arr.indexOf(3) === -1
+          // }
+          // console.log(is13([7, 8]));
+          // console.log(is13([3, 2]));
+          // console.log(is13([0, 1]));
+
+          // =============================================================
+          // Exercise-79
+          // Write a JavaScript program to test whether a given array of integers contains 30 and 40 twice.
+          // The array length should be 0, 1, or 2.
+
+          // -------------------------------------------------------------
+
+          // function twice3040(arr) {
+          //      return arr[0] === 30 && arr[1] === 30 || arr[0] === 40 && arr[1] === 40
+          // }
+          // console.log(twice3040([30, 30]));
+          // console.log(twice3040([40, 40]));
+          // console.log(twice3040([20, 20]));
+          // console.log(twice3040([30]));
+
+          // =============================================================
+          // Exercise-80
+          // Write a JavaScript program to swap the first and last elements of a given array of integers.
+          // The array length should be at least 1
+
+          // -------------------------------------------------------------
+
+          // function swap(arr) {
+          //      [arr[0], arr[arr.length - 1]] = [arr[arr.length - 1], arr[0]]
+          //      return arr
+          // }
+          // console.log(swap([1, 2, 3, 4]));
+          // console.log(swap([0, 2, 1]));
+          // console.log(swap([3]));
+
+          // =============================================================
+          // Exercise-81
+          // Write a JavaScript program to add two digits of a given positive integer of length two
+
+          // -------------------------------------------------------------
+
+          // function addTwoDigits(number) {
+          //      return number % 10 + Math.floor(number / 10)
+          // }
+          // console.log(addTwoDigits(25))
+          // console.log(addTwoDigits(50))
+
+          // =============================================================
+          // Exercise-83
+          // Write a JavaScript to find the longest string from a given array of strings
+
+          // -------------------------------------------------------------
+
+          // function longestString(arr) {
+          //      let max = 0;
+          //      arr.map(function (item, index) {
+          //           max = Math.max(max, item.length)
+          //      })
+          //      return arr.filter((item) => item.length == max)
+          // }
+          // console.log(longestString(['a', 'aa', 'aaa', 'aaaaa', 'aaaa']))
+
+          // =============================================================
+          // Exercise-84
+          // Write a JavaScript to replace each character of a given string by the next one in the English alphabet.
+          //  Go to the editor
+          // Note: 'a' will be replace by 'b' or 'z' would be replaced by 'a'.
+
+          // -------------------------------------------------------------
+
+          // function alphabet_char_Shift(str) {
+          //      let arrStr = str.split('')
+          //      for (let i = 0; i < arrStr.length; i++) {
+          //           let n = arrStr[i].charCodeAt() - 'a'.charCodeAt();
+          //           n = (n + 1) % 26
+          //           arrStr[i] = String.fromCharCode(n + 'a'.charCodeAt())
+          //      }
+          //      return arrStr.join('')
+          // }
+          // console.log(alphabet_char_Shift("abcdxyz"))
+
+          // =============================================================
+          // Exercise-85
+          // Write a JavaScript code to divide a given array of positive integers into two parts.
+          // First element goes to first part, second element goes to second part, and third element goes to first part and so on.
+          // Now compute the sum of two parts and store into an array of size two.
+
+          // -------------------------------------------------------------
+
+          // function alternate_Sums(arr) {
+          //      let arrNew = [0, 0]
+          //      for (let i = 0; i < arr.length; i++) {
+          //           if (i % 2) {
+          //                arrNew[1] += arr[i]
+          //           }
+          //           else {
+          //                arrNew[0] += arr[i]
+          //           }
+          //      }
+          //      return arrNew
+          // }
+          // console.log(alternate_Sums([1, 3, 6, 2, 5, 10]))
+
+          // =============================================================
+          // Exercise-86
+          // Write a JavaScript program to find the types of a given angle.
+
+          // -------------------------------------------------------------
+
+          // function angleType(angle) {
+          //      if (angle < 90) {
+          //           return "Acute angle.";
+          //      }
+          //      if (angle === 90) {
+          //           return "Right angle.";
+          //      }
+          //      if (angle < 180) {
+          //           return "Obtuse angle.";
+          //      }
+          //      return "Straight angle.";
+          // }
+          // console.log(angleType(47))
+          // console.log(angleType(90))
+          // console.log(angleType(145))
+          // console.log(angleType(180))
+
+          // =============================================================
+          // Exercise-87
+          // Write a JavaScript program to check whether two arrays of integers of same length are similar or not.
+          // The arrays will be similar if one array can be obtained from another array by swapping at most one pair of elements
+
+          // -------------------------------------------------------------
+
+          // function array_checking(arra1, arra2) {
+          //      for (var i = 0; i < arra1.length; i++) {
+          //           for (var j = i; j < arra1.length; j++) {
+          //                var result = true,
+          //                     temp = arra1[i];
+          //                arra1[i] = arra1[j];
+          //                arra1[j] = temp;
+          //                for (var k = 0; k < arra1.length; k++) {
+          //                     if (arra1[k] !== arra2[k]) {
+          //                          result = false;
+          //                          break;
+          //                     }
+          //                }
+          //                if (result) {
+          //                     return true;
+          //                }
+          //                arra1[j] = arra1[i];
+          //                arra1[i] = temp;
+          //           }
+          //      }
+          //      return false;
+          // }
+          // console.log(array_checking([10, 20, 30], [10, 20, 30]))
+          // console.log(array_checking([10, 20, 30], [30, 10, 20]))
+          // console.log(array_checking([10, 20, 30, 40], [10, 30, 20, 40]))
+
+          // =============================================================
+          // Exercise-88
+          // Write a JavaScript program to check whether two given integers are similar or not,
+          // if a given divisor divides both integers and it does not divide either.
+
+          // -------------------------------------------------------------
+
+          // function checkingNumbers(a, b, divisor) {
+          //      return (a % divisor === 0 && b % divisor === 0) || (a % divisor !== 0 && b % divisor !== 0)
+          // }
+
+          // console.log(checkingNumbers(10, 25, 5))
+          // console.log(checkingNumbers(10, 20, 5))
+          // console.log(checkingNumbers(10, 20, 4))
+
+          // =============================================================
+          // Exercise-89
+          // Write a JavaScript program to check whether it is possible to replace $
+          // in a given expression x $ y = z with one of the four signs +, -, * or / to obtain a correct expression
+
+          // -------------------------------------------------------------
+
+          // function checkArithmeticExpression(a, b, divisor) {
+          //      return (a - b === divisor) || (a + b === divisor) || (a / b === divisor) || (a * b === divisor)
+          // }
+          // console.log(checkArithmeticExpression(10, 25, 35))
+          // console.log(checkArithmeticExpression(10, 25, 250))
+          // console.log(checkArithmeticExpression(30, 25, 5))
+          // console.log(checkArithmeticExpression(100, 25, 4.0))
+          // console.log(checkArithmeticExpression(100, 25, 25))
+
+          // =============================================================
+          // Exercise-92
+          // Write a JavaScript program to find the maximal difference between any two adjacent elements of a given array of integers.
+
+          // -------------------------------------------------------------
+
+          // function maxDifference(arr) {
+          //      let max = 0, temp;
+          //      for (let i = 0; i < arr.length - 1; i++) {
+          //           temp = Math.abs(arr[i] - arr[i + 1])
+          //           max = Math.max(max, temp);
+          //      }
+          //      return max;
+          // }
+          // console.log(maxDifference([1, 2, 3, 8, 9]))
+          // console.log(maxDifference([1, 2, 3, 18, 9]))
+          // console.log(maxDifference([13, 2, 3, 8, 9]))
+
+          // =============================================================
+          // Exercise-93
+          // Write a JavaScript program to find the maximal difference among all possible pairs of a given array of integers
+
+          // -------------------------------------------------------------
+
+          // function arrayMaxDiff(arr) {
+          //      let maxResult = 0;
+          //      for (let i = 0; i < arr.length; i++) {
+          //           for (let j = 0; j != i && j < arr.length; j++) {
+          //                let diff = Math.abs(arr[i] - arr[j])
+          //                maxResult = Math.max(maxResult, diff)
+          //           }
+          //      }
+          //      return maxResult
+
+          // }
+          // console.log(arrayMaxDiff([1, 2, 3, 8, 9]))
+          // console.log(arrayMaxDiff([1, 2, 3, 18, 9]))
+          // console.log(arrayMaxDiff([13, 2, 3, 8, 9]))
+
+          // =============================================================
+          // Exercise-94
+          // Write a JavaScript program to find the number which appears most in a given array of integers
+
+          // -------------------------------------------------------------
+
+          // function array_unique(array) {
+          //      array.sort()
+          //      let count = 1;
+          //      let max = [0, 0]
+          //      for (let i = 0; i < array.length - 1; i++) {
+          //           if (array[i] == array[i + 1]) {
+          //                ++count
+          //           } else {
+          //                if (max[1] < count) {
+          //                     max[0] = array[i]
+          //                     max[1] = count
+          //                }
+          //                count = 1
+          //           }
+          //      }
+          //      return max[0]
+          // }
+          // console.log(array_unique([1, 2, 3, 2, 3, 8, 1, 9]))
+
+
+
+          // =============================================================
+          // Exercise-95
+          // Write a JavaScript program to replace all the numbers with a specified number of a given array of integers
+
+          // -------------------------------------------------------------
+
+          // function arrayElementReplace(arr, old_value, new_value) {
+          //      for (let i = 0; i < arr.length; i++) {
+          //           if (arr[i] === old_value) {
+          //                arr[i] = new_value
+          //           }
+          //      }
+          //      return arr
+          // }
+          // num = [1, 2, 3, 2, 2, 8, 1, 9];
+          // console.log("Original Array: " + num);
+          // console.log(arrayElementReplace(num, 2, 5));
+
+          // =============================================================
+          // Exercise-96
+          // Write a JavaScript program to compute the sum of absolute differences of consecutive numbers of a given array of integers
+
+          // -------------------------------------------------------------
+
+          // function sum_adjacent_difference(arr) {
+          //      result = 0;
+          //      for (let i = 0; i < arr.length - 1; i++) {
+          //           result += Math.abs(arr[i] - arr[i + 1])
+          //      }
+          //      return result
+          // }
+          // console.log(sum_adjacent_difference([1, 2, 3, 2, -5]));
+
+          // =============================================================
+          // Exercise-97
+          // Write a JavaScript program to find the shortest possible string
+          // which can create a string to make it a palindrome by adding characters to the end of it
+
+          // -------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     </script>
+</body>
+
+</html>
